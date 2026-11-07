@@ -1,0 +1,145 @@
+CBC devel — COIN-OR Branch and Cut
+  args: C:\Users\CAIOLA~1\AppData\Local\Temp\202acce96199486ea47686e20914183e-pulp.mps -sec 20 -randomCbcSeed 1 -ratio 0 -allow 0 -threads 1 -timeMode elapsed -randomSeed 1 -solve -printingOptions all -solution C:\Users\CAIOLA~1\AppData\Local\Temp\202acce96199486ea47686e20914183e-pulp.sol
+  default strategy 1
+
+▶ Problem loading
+
+  Problem: MODEL
+  |Rows| = 883   |Cols| = 450   |NZ| = 10098
+  Variables: 450 binary, 0 integer, 0 continuous
+
+  Coefficient ranges:
+    Matrix  ∈ [1, 9670]   κ ≈ 9670
+    Cost    ∈ [1,    1]   κ ≈    1
+    Bounds  ∈ [1,    1]   κ ≈    1
+    RHS     ∈ [1,   24]   κ ≈   24
+
+✔ Problem loaded — 883 rows, 450 cols, 10098 NZ, 450 integer
+
+▶ Non-default parameters
+
+  seconds  1e+08 → 20
+  randomCbcSeed  42 → 1
+  allowableGap  1e-12 → 0
+  threads  0 → 1
+  randomSeed  1234567 → 1
+
+▶ Root LP relaxation
+
+  Bound tightening: 38 bounds tightened (38 fixed) in 0.000 s.
+  Clique strengthening: no changes (0.00s)
+  Coefficient strengthening: no changes (0.00s)
+  Row reductions: 51 rows removed (50 all-fixed, 0 duplicate, 1 parallel), 1 row bounds tightened (0.00s)
+  LP auto: recommended dual_pesteep_psineg1_pertv61
+
+  ──────── ──────── ─────────────── ──────────── ──────────── ────────
+  Phase        Iter       Objective   Primal inf     Dual inf     Time
+  ──────── ──────── ─────────────── ──────────── ──────────── ────────
+  Dual            0    0.000000e+00   3.7080e+01   0.0000e+00    0.009
+  ─────────────────────── restart ─────────────────────────────────────
+  LP            535    1.428571e+00   0.0000e+00   0.0000e+00    0.032
+  ──────── ──────── ─────────────── ──────────── ──────────── ────────
+
+✔ LP Optimal — Frac: 318/450 (70.7%)   Obj: 1.42857   Iters: 535   Time: 0.032s
+
+▶ Preprocessing
+
+   Pass   Fixed Tightened Strengthened  Subst Time(s)
+  ───── ─────── ───────── ──────────── ────── ───────
+      1      31         0          309     12   0.055
+      2       0         0          371      0   0.065
+      3       0         0          272      0   0.146
+      4       0         0          200      0   0.191
+      5       0         0          146      0   0.231
+      6       0         0          109      0   0.254
+      7       0         0           96      0   0.270
+      8       0         0           72      0   0.287
+      9       0         0           39      0   0.305
+     10       0         0           20      0   0.321
+
+  Processed model: 598 rows, 371 cols, 8347 NZ
+                   371 integer (371 binary)
+
+  SOS2: 43 sets found (365 members) — not used (0 overlaps, 371 integer vars; too much overlap)
+  Conflict graph: built in 0.00s, density 1.019%
+  Clique strengthening: extended 0, dominated 0
+
+✔ Preprocessing complete — Time: 0.293s
+
+▶ Root node heuristics
+
+▶ Feasibility pump (191 fractional, suminf 39.62)
+
+  Round   Pass   Fractional       Suminf Status                BestSol  Time(s)
+  ───── ────── ──────────── ──────────── ────────────── ────────────── ────────
+      1      1           64      15.0570 converging                       0.373
+      1      2            8       3.7342 converging                       0.386
+      1      3            6       2.7342 converging                       0.390
+      1      4            6       2.7342 not converging                   0.393
+      1      5            4       1.7342 converging                       0.395
+      1      6            4       1.8438 oscillating                      0.399
+      1      7            3       1.0000 oscillating                      0.410
+      1      8            3       0.8397 oscillating                      0.415
+      1      9            3       0.8397 oscillating                      0.416
+      1     10            4       0.7771 oscillating                      0.418
+ ★    2     19           64      15.0570 solution                    8    0.483
+      2    118           44      13.7581 no solution                       1.06
+
+✔ Feasibility pump — best 8 in 0.744s (2 rounds, 118 passes)
+
+  Heuristic                Status              BestSol  Time(s)
+  ──────────────────────── ──────────── ────────────── ────────
+  rounding                 no solution                    0.000
+  greedy cover             no solution                    0.000
+  greedy equality          no solution                    0.000
+  DiveCoefficient          no solution                    0.028
+  RINS                     no solution                    0.017
+
+✔ Root node heuristics — best 8 in 0.790s
+
+▶ Cut generation (root node)
+
+  Pass     Rows    Tight   Frac     Suminf        Objective  Time(s)
+  ──── ──────── ──────── ────── ────────── ──────────────── ────────
+     1      598        0    191      39.62          6.20025     1.13
+     2      602        4     23      7.938                7     1.17
+     3      608       10      9       2.37                7     1.17
+     4      611       13     16     0.4674                7     1.19
+     5      610       12     13      1.878                7     1.20
+     6      610       12     21    0.07479                7     1.21
+     7      609       11     13   0.007285                7     1.21
+
+  Cut generator summary:
+  Generator              Row cuts Avg density Col cuts   Time(s) Next run    
+  ────────────────────── ──────── ─────────── ──────── ───────── ────────────
+  Probing                      22        38.5      104     0.016 every node  
+  Gomory                        1         7.0        6     0.003 every node  
+  Knapsack                      4         6.8        0     0.003 every node  
+  Clique                        1         7.0        0     0.001 disabled    
+  MixedIntegerRounding2        10       145.3        0     0.011 every node  
+  FlowCover                     0         0.0        0     0.001 disabled    
+  TwoMirCuts                   90       155.4        3     0.012 every node  
+  ZeroHalf                     33        77.2        0     0.003 every node  
+
+✔ Cut generation complete — 11 cuts, obj 6.20025 → 7 in 7 passes
+
+▶ Branch and bound
+
+     Nodes   OnTree  Depth         BestSol Method                 BestBound     Gap%   Time(s)
+  ──────── ──────── ────── ─────────────── ──────────────── ─────────────── ──────── ─────────
+         0        1      0               8                                7   12.50%      1.23
+
+✔ Optimal — Obj: 7   Bound: 7   Gap: 0.00%   Nodes: 1   Iters: 513   Time: 1.24s
+  Strong branching: 52 calls, 224 iters, 0 nodes fathomed, 4 vars fixed
+  Max depth: 0   Vars fixed on cost: 0   Fathoming: 0 times, 0 nodes, 0 iters
+
+▶ Postprocessing
+
+✔ Postprocessing complete — Time: 0.00733s
+
+Result - Optimal solution found
+Objective value:                7
+Enumerated nodes:               1
+Total iterations:               513
+Time (B&C, Wallclock seconds):  1.25434
+Total time (Wallclock seconds): 1.29508   (CPU seconds):             1.295

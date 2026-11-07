@@ -1,0 +1,56 @@
+CBC devel — COIN-OR Branch and Cut
+  args: C:\Users\CAIOLA~1\AppData\Local\Temp\b839565f072b4459978a9c183b09394e-pulp.mps -sec 20 -randomCbcSeed 1 -ratio 0 -allow 0 -threads 1 -timeMode elapsed -randomSeed 1 -solve -printingOptions all -solution C:\Users\CAIOLA~1\AppData\Local\Temp\b839565f072b4459978a9c183b09394e-pulp.sol
+  default strategy 1
+
+▶ Problem loading
+
+  Problem: MODEL
+  |Rows| = 24   |Cols| = 18   |NZ| = 96
+  Variables: 16 binary, 0 integer, 2 continuous
+
+  Coefficient ranges:
+    Matrix  ∈ [1,  6]   κ ≈  6
+    Cost    ∈ [1,  1]   κ ≈  1
+    Bounds  ∈ [1,  1]   κ ≈  1
+    RHS     ∈ [1, 16]   κ ≈ 16
+
+✔ Problem loaded — 24 rows, 18 cols, 96 NZ, 16 integer
+
+▶ Non-default parameters
+
+  seconds  1e+08 → 20
+  randomCbcSeed  42 → 1
+  allowableGap  1e-12 → 0
+  threads  0 → 1
+  randomSeed  1234567 → 1
+
+▶ Root LP relaxation
+
+  Bound tightening: 18 bounds tightened (16 fixed) in 0.000 s.
+  Clique strengthening: no changes (0.00s)
+  Coefficient strengthening: no changes (0.00s)
+  Row reductions: 20 rows removed (20 all-fixed, 0 duplicate, 0 parallel), 0 row bounds tightened (0.00s)
+  LP auto: recommended dual_pesteep_psi1_pertv61
+✔ LP Optimal — Frac: 0/16 (0.0%)   Obj: 2   Time: 0.004s
+
+▶ Preprocessing
+
+
+  Processed model: 0 rows, 0 cols, 0 NZ
+                   2 continuous variable(s) made integer
+
+  Conflict graph: built in 0.00s, density 2.402%
+  Clique strengthening: extended 0, dominated 0
+
+✔ Preprocessing complete — Time: 0.001s
+
+▶ Postprocessing
+
+✔ Postprocessing complete — Time: 0.000193s
+
+Result - Optimal solution found
+Objective value:                2
+Enumerated nodes:               0
+Total iterations:               0
+Time (B&C, Wallclock seconds):  0.00572681
+Total time (Wallclock seconds): 0.0139971   (CPU seconds):             0.013

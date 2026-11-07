@@ -1,0 +1,44 @@
+CBC devel — COIN-OR Branch and Cut
+  args: C:\Users\CAIOLA~1\AppData\Local\Temp\9731c794a15b46cbbeb7180a5d840797-pulp.mps -sec 20 -randomCbcSeed 1 -ratio 0 -allow 0 -threads 1 -timeMode elapsed -randomSeed 1 -solve -printingOptions all -solution C:\Users\CAIOLA~1\AppData\Local\Temp\9731c794a15b46cbbeb7180a5d840797-pulp.sol
+  default strategy 1
+
+▶ Problem loading
+
+  Problem: MODEL
+  |Rows| = 547   |Cols| = 270   |NZ| = 4066
+  Variables: 270 binary, 0 integer, 0 continuous
+
+  Coefficient ranges:
+    Matrix  ∈ [1, 9670]   κ ≈ 9670
+    Cost    ∈ [1,    1]   κ ≈    1
+    Bounds  ∈ [1,    1]   κ ≈    1
+    RHS     ∈ [1,   24]   κ ≈   24
+
+✔ Problem loaded — 547 rows, 270 cols, 4066 NZ, 270 integer
+
+▶ Non-default parameters
+
+  seconds  1e+08 → 20
+  randomCbcSeed  42 → 1
+  allowableGap  1e-12 → 0
+  threads  0 → 1
+  randomSeed  1234567 → 1
+
+▶ Root LP relaxation
+
+  Bound tightening: 38 bounds tightened (38 fixed) in 0.000 s.
+  Clique strengthening: no changes (0.00s)
+  Coefficient strengthening: no changes (0.00s)
+  Row reductions: 51 rows removed (50 all-fixed, 0 duplicate, 1 parallel), 1 row bounds tightened (0.00s)
+  LP auto: recommended dual_pesteep_psineg1_pertv61
+
+  ──────── ──────── ─────────────── ──────────── ──────────── ────────
+  Phase        Iter       Objective   Primal inf     Dual inf     Time
+  ──────── ──────── ─────────────── ──────────── ──────────── ────────
+  Dual            0    0.000000e+00   3.7080e+01   0.0000e+00    0.008
+  Dual          167    2.305669e+00   2.1444e+03   0.0000e+00    0.015
+  ──────── ──────── ─────────────── ──────────── ──────────── ────────
+
+✔ LP Infeasible — Frac: 124/270 (45.9%)   Obj: 2.30567   Iters: 167   Time: 0.015s
+Problem is infeasible - 0.011 seconds
+Total time (Wallclock seconds): 0.0493069   (CPU seconds):             0.048

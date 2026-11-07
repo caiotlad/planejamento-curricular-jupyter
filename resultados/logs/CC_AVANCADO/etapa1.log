@@ -1,0 +1,136 @@
+CBC devel — COIN-OR Branch and Cut
+  args: C:\Users\CAIOLA~1\AppData\Local\Temp\8f2d8c68557a4f4d8bf0fa2bccf2bc2c-pulp.mps -sec 20 -randomCbcSeed 1 -ratio 0 -allow 0 -threads 1 -timeMode elapsed -randomSeed 1 -solve -printingOptions all -solution C:\Users\CAIOLA~1\AppData\Local\Temp\8f2d8c68557a4f4d8bf0fa2bccf2bc2c-pulp.sol
+  default strategy 1
+
+▶ Problem loading
+
+  Problem: MODEL
+  |Rows| = 644   |Cols| = 360   |NZ| = 7643
+  Variables: 360 binary, 0 integer, 0 continuous
+
+  Coefficient ranges:
+    Matrix  ∈ [1, 6950]   κ ≈ 6950
+    Cost    ∈ [1,    1]   κ ≈    1
+    Bounds  ∈ [1,    1]   κ ≈    1
+    RHS     ∈ [1,   24]   κ ≈   24
+
+✔ Problem loaded — 644 rows, 360 cols, 7643 NZ, 360 integer
+
+▶ Non-default parameters
+
+  seconds  1e+08 → 20
+  randomCbcSeed  42 → 1
+  allowableGap  1e-12 → 0
+  threads  0 → 1
+  randomSeed  1234567 → 1
+
+▶ Root LP relaxation
+
+  Bound tightening: 23 bounds tightened (23 fixed) in 0.000 s.
+  Clique strengthening: no changes (0.01s)
+  Coefficient strengthening: no changes (0.00s)
+  Row reductions: 29 rows removed (29 all-fixed, 0 duplicate, 0 parallel), 0 row bounds tightened (0.00s)
+  LP auto: recommended dual_pesteep_psineg1_pertv61
+
+  ──────── ──────── ─────────────── ──────────── ──────────── ────────
+  Phase        Iter       Objective   Primal inf     Dual inf     Time
+  ──────── ──────── ─────────────── ──────────── ──────────── ────────
+  Dual            0    0.000000e+00   3.3795e+01   0.0000e+00    0.013
+  LP            446    1.428571e+00   0.0000e+00   0.0000e+00    0.052
+  ──────── ──────── ─────────────── ──────────── ──────────── ────────
+
+✔ LP Optimal — Frac: 255/360 (70.8%)   Obj: 1.42857   Iters: 446   Time: 0.052s
+
+▶ Preprocessing
+
+   Pass   Fixed Tightened Strengthened  Subst Time(s)
+  ───── ─────── ───────── ──────────── ────── ───────
+      1      18         0          257      0   0.080
+      2       0         0          277      0   0.092
+      3       0         0          230      0   0.254
+      4       0         0          165      0   0.268
+      5       0         0          122      0   0.284
+      6       0         0           92      0   0.300
+      7       0         0           85      0   0.314
+      8       0         0           76      0   0.322
+      9       0         0           46      0   0.333
+     10       0         0           23      0   0.342
+
+  Processed model: 479 rows, 316 cols, 6909 NZ
+                   316 integer (316 binary)
+
+  SOS2: 35 sets found (310 members) — not used (0 overlaps, 316 integer vars; too much overlap)
+  Conflict graph: built in 0.00s, density 1.168%
+  Clique strengthening: extended 0, dominated 0
+
+✔ Preprocessing complete — Time: 0.288s
+
+▶ Root node heuristics
+
+▶ Feasibility pump (153 fractional, suminf 19.37)
+
+  Round   Pass   Fractional       Suminf Status                BestSol  Time(s)
+  ───── ────── ──────────── ──────────── ────────────── ────────────── ────────
+      1      1           23       4.8185 converging                       0.364
+      1      2           17       3.8185 converging                       0.370
+      1      3            2       0.7281 converging                       0.379
+      1      4            2       0.9295 oscillating                      0.380
+      1      5           10       4.0462 oscillating                      0.388
+      1      6            4       0.8790 oscillating                      0.391
+      1      7            4       0.8790 oscillating                      0.392
+      1      8            2       0.3856 oscillating                      0.393
+      1      9            2       0.8748 oscillating                      0.394
+      1     10            4       1.8259 oscillating                      0.400
+ ★    2     15           23       4.8185 solution                   10    0.511
+ ★    3     83           23       4.8185 solution                    8    0.837
+ ★    4    141          143      17.2817 solution                    6     1.12
+      4    240          151      20.0449 no solution                       1.39
+
+✔ Feasibility pump — best 6 in 1.04s (4 rounds, 240 passes)
+
+  Heuristic                Status              BestSol  Time(s)
+  ──────────────────────── ──────────── ────────────── ────────
+  rounding                 no solution                    0.000
+  greedy cover             no solution                    0.000
+  greedy equality          no solution                    0.000
+  DiveCoefficient          no solution                    0.009
+  RINS                     no solution                    0.011
+
+✔ Root node heuristics — best 6 in 1.06s
+
+▶ Cut generation (root node)
+
+  Pass     Rows    Tight   Frac     Suminf        Objective  Time(s)
+  ──── ──────── ──────── ────── ────────── ──────────────── ────────
+     1      479        0    153      19.37          4.99167     1.41
+
+  ✘ LP relaxation infeasible or too expensive
+
+
+✔ Optimal — Obj: 6   Bound: 6   Gap: 0.00%   Nodes: 0   Iters: 76   Time: 1.43s
+  Strong branching: 0 calls, 0 iters, 0 nodes fathomed, 0 vars fixed
+  Max depth: 0   Vars fixed on cost: 0   Fathoming: 0 times, 0 nodes, 0 iters
+
+  Cut generator summary:
+  Generator              Row cuts Avg density Col cuts   Time(s) Next run    
+  ────────────────────── ──────── ─────────── ──────── ───────── ────────────
+  Probing                      10         2.0      148     0.002 every node  
+  Gomory                        0         0.0        0     0.000 disabled    
+  Knapsack                      0         0.0        0     0.000 disabled    
+  Clique                        0         0.0        0     0.000 disabled    
+  MixedIntegerRounding2         0         0.0        0     0.000 disabled    
+  FlowCover                     0         0.0        0     0.000 disabled    
+  ZeroHalf                      0         0.0        0     0.000 disabled    
+
+✔ Cut generation complete — 0 cuts, obj 4.99167 → 6 in 1 pass
+
+▶ Postprocessing
+
+✔ Postprocessing complete — Time: 0.00465s
+
+Result - Optimal solution found
+Objective value:                6
+Enumerated nodes:               0
+Total iterations:               76
+Time (B&C, Wallclock seconds):  1.4369
+Total time (Wallclock seconds): 1.46492   (CPU seconds):             1.465

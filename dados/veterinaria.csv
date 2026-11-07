@@ -1,0 +1,64 @@
+codigo,nome,creditos,carga,modulo,pre,co,percentual
+GES105,Bioestatística,4,340,1,,,0
+GMV102,Citologia e Histologia Geral,4,340,1,,,0
+GMV103,Embriologia Geral,3,255,1,,,0
+GMV201,Introdução à Medicina Veterinária,2,170,1,,,0
+GMV204,Anatomia Veterinária I,6,510,1,,,0
+GQI167,Bioquímica Teórica,3,255,1,,GQI168,0
+GQI168,Bioquímica Prática-Experimental,2,170,1,,GQI167,0
+GAE137,Fundamentos de Extensão,2,170,2,,,0
+GBI219,Genética Veterinária,4,340,2,GES105,,0
+GMV110,Imunologia Veterinária,3,255,2,,GMV241,0
+GMV224,Histologia Veterinária,6,510,2,GMV102,,0
+GMV225,Anatomia Veterinária II,8,680,2,GMV204,,0
+GMV241,Fisiologia Veterinária I,4,340,2,GMV102 GMV204 GQI167 GQI168,GMV224 GMV225,0
+GZO130,Fundamentos de Forragicultura,3,255,2,GQI167,,0
+GMV109,Metabolismo Animal,4,340,3,GQI167 GQI168,GMV242,0
+GMV113,Parasitologia Veterinária,5,425,3,GMV224,,0
+GMV202,Patologia Geral Veterinária,6,510,3,GMV224 GMV241,,0
+GMV221,Metodologia Científica Aplicada à Medicina Veterinária,2,170,3,,,0
+GMV242,Fisiologia Veterinária II,3,255,3,GMV102 GMV204 GMV224 GMV225 GMV241 GQI167 GQI168,,0
+GMV250,Fundamentos de Virologia Veterinária,1,85,3,GMV110 GQI167 GQI168,,0
+GMV251,Microbiologia Veterinária - Bacteriologia e Micologia,4,340,3,GMV110 GQI167 GQI168,,0
+GZO129,Melhoramento Animal,3,255,3,GBI219,,0
+GMV115,Patologia Especial Veterinária,8,680,4,GMV202 GMV241 GMV242,,0
+GMV117,Diagnóstico por Imagem,4,340,4,GMV225 GMV242,,0
+GMV132,Deontologia e Medicina Veterinária Legal,3,255,4,GMV201 GMV221,,0
+GMV144,Bem-estar Animal,2,170,4,GMV242,,0
+GMV244,Farmacologia e Terapêutica Veterinária,7,595,4,GMV113 GMV202 GMV242 GMV250 GMV251 GQI167 GQI168,,0
+GZO191,Fundamentos de Nutrição e Alimentação Animal,4,340,4,GMV109,,0
+GZO192,Produção de Suínos e Aves,4,340,4,GMV109,,0
+GCA133,Tecnologia de Carne e Pescado,4,340,5,GMV250 GMV251 GQI167 GQI168,,0
+GCA134,Tecnologia de Leite e Produtos Lácteos,4,340,5,GMV250 GMV251 GQI167 GQI168,,0
+GMV116,Semiologia,5,425,5,GMV115 GMV242,,0
+GMV118,Doenças I,4,340,5,GMV110 GMV113 GMV250 GMV251,GMV238,0
+GMV120,Patologia Clínica Veterinária,4,340,5,GMV115 GMV242 GQI167 GQI168,GMV116,0
+GMV238,Epidemiologia e Saúde Pública,3,255,5,GES105 GMV113,,0
+GZO193,Produção de Ruminantes,6,510,5,GMV241 GZO129 GZO191,,0
+GMV121,Anestesiologia Veterinária,4,340,6,GMV242 GMV244,,0
+GMV123,Clínica Médica de Grandes Animais,7,595,6,GMV116 GMV120 GMV202,,0
+GMV124,Doenças II,4,340,6,GMV113 GMV118 GMV238 GMV250 GMV251,,0
+GMV222,Inspeção de Leite e Produtos Lácteos,3,255,6,GCA134 GMV250 GMV251,,0
+GMV234,Andrologia e Biotécnicas Aplicadas à Reprodução,4,340,6,GMV115 GMV202 GMV242,,0
+GMV235,Técnica Cirúrgica Veterinária,5,425,6,GMV116,GMV121,0
+NMV07113,Práticas Integradoras I,2,170,6,,GMV235,0
+GGA101,Economia Rural,2,170,7,GES105 GZO192 GZO193,,0
+GMV126,Clínica Médica de Pequenos Animais,6,510,7,GMV116 GMV117 GMV120 GMV244,,0
+GMV129,Doenças III,4,340,7,GMV118 GMV124,,0
+GMV233,Clínica Cirúrgica Veterinária,7,595,7,GMV121 GMV235,,0
+GMV236,Ginecologia e Biotécnicas Aplicadas à Reprodução,4,340,7,GMV115 GMV234,,0
+NMV07114,Práticas Integradoras II,4,340,7,GMV123,GMV126,0
+GGA120,Gestão Aplicada à Medicina Veterinária,2,170,8,GZO192,,0
+GMV131,Obstetrícia Veterinária,4,340,8,GMV233 GMV235 GMV236,,0
+GMV176,"Inspeção de Carne, Pescado, Ovos e Mel",4,340,8,GCA133 GMV115 GMV250 GMV251,,0
+GMV219,Práticas Integradoras III,2,170,8,GMV236,,0
+GMV232,Toxicologia Veterinária,3,255,8,GMV115 GMV123 GMV126,,0
+GMV248,"Saúde Única, Defesa Sanitária Animal e Saúde Pública Veterinária",4,340,8,GMV124 GMV129,,0
+NMV07115,Doenças IV,4,340,8,GMV118 GMV124 GMV129,,0
+EMV0756,Atividades Práticas Profissionalizantes Internas,19,1615,9,GAE137 GBI219 GCA133 GCA134 GES105 GGA101 GGA120 GMV102 GMV103 GMV109 GMV110 GMV113 GMV115 GMV116 GMV117 GMV118 GMV120 GMV121 GMV123 GMV124 GMV126 GMV129 GMV131 GMV132 GMV144 GMV176 GMV201 GMV202 GMV204 GMV219 GMV221 GMV222 GMV224 GMV225 GMV232 GMV233 GMV234 GMV235 GMV236 GMV238 GMV241 GMV242 GMV244 GMV248 GMV250 GMV251 GQI167 GQI168 GZO129 GZO130 GZO191 GZO192 GZO193 NMV07113 NMV07114 NMV07115,,0
+EMV0755,Estágio Supervisionado / TCC,20,1700,10,,,0
+GAE120,Marketing,4,340,99,,,0
+GAE132,Comércio Exterior,4,340,99,,,0
+GAE149,Elaboração e Avaliação de Projetos Empresariais,4,340,99,,,0
+GAE151,Desenvolvimento e Gestão da Agricultura Familiar,4,340,99,,,0
+GBI110,Biologia de Populações,4,340,99,,,0

@@ -1,0 +1,4 @@
+pulp[cbc]==4.0.0
+cbcbox==2.935
+matplotlib==3.10.7
+jupyterlab==4.6.3

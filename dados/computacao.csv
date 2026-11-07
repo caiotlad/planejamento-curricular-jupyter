@@ -1,0 +1,48 @@
+codigo,nome,creditos,carga,modulo,pre,co,percentual
+GAC124,Introdução aos Algoritmos,6,510,1,,,0
+GCC241,Introdução a Computação,2,170,1,,,0
+GFI105,Conceitos de Física B,2,170,1,,,0
+GMM102,Geometria Analítica e Álgebra Linear,4,340,1,,,0
+GMM104,Cálculo I,6,510,1,,,0
+GAC108,Estruturas de Dados,6,510,2,GAC124,,0
+GCC260,Laboratório de Circuitos Digitais,2,170,2,,GCC261,0
+GCC261,Introdução aos Circuitos Digitais,4,340,2,,GCC260,0
+GES101,Estatística,4,340,2,GMM104,,0
+GMM106,Cálculo II,4,340,2,GMM102 GMM104,,0
+GMM135,Matemática Discreta,4,340,2,,,0
+GAC107,Paradigmas de Linguagens de Programação,4,340,3,,GAC108,0
+GCC117,Arquitetura de Computadores I,4,340,3,GAC124 GCC260 GCC261,,0
+GCC122,Linguagens Formais e Autômatos,4,340,3,GAC124,,0
+GCC218,Algoritmos em Grafos,4,340,3,,GAC108,0
+GCC263,Introdução a Sistemas de Banco de Dados,4,340,3,GAC108,,0
+GMM111,Cálculo Numérico,4,340,3,GAC124 GMM106,,0
+GAC106,Práticas de Programação Orientada a Objetos,4,340,4,GAC107,,0
+GCC108,Teoria da Computação,4,340,4,GCC122 GMM135,,0
+GCC116,Sistemas Operacionais,4,340,4,GCC117,,0
+GCC123,Arquitetura de Computadores II,4,340,4,GCC117,,0
+GCC175,Sistemas Gerenciadores de Banco de Dados,4,340,4,GCC263,,0
+GCC188,Engenharia de Software,4,340,4,GCC263,,0
+GAC104,Computação Gráfica,4,340,5,GCC218 GMM102,,0
+GCC125,Redes de Computadores,4,340,5,GCC117,,0
+GCC130,Compiladores,4,340,5,GCC122,,0
+GCC219,Interação Humano-Computador,4,340,5,,GCC188,0
+GCC220,Metodologia de Pesquisa,4,340,5,,,0
+GCC253,Complexidade e Projetos de Algoritmos,4,340,5,GCC117 GCC218 GMM104 GMM135,GCC108,0
+GAC105,Programação Paralela e Concorrente,4,340,6,GCC116,,0
+GCC128,Inteligência Artificial,4,340,6,GCC253,GAC107,0
+GCC129,Sistemas Distribuídos,4,340,6,GCC125,,0
+GCC222,"Ética, Computador e Sociedade",4,340,7,,,60
+TCC1070,Trabalho de Conclusão I,0,850,7,,,65
+TCC1071,Trabalho de Conclusão II,0,850,8,TCC1070,,65
+GAC115,Estudos Avançados em Tecnologias Educacionais,4,340,99,GCC220,,0
+GAC116,Programação WEB,4,340,99,GCC125 GCC188 GCC263,,0
+GAC120,Realidade Virtual e Aumentada,4,340,99,GAC108,,0
+GCC118,Programação Matemática,4,340,99,GMM102 GMM135,,0
+GCC225,Gestão do Conhecimento no Setor Público,4,340,99,,,0
+GCH110,Psicologia,2,170,99,,,0
+GCH189,Ciências Políticas,4,340,99,,,0
+GDE123,Educação Trabalho Ciência e Tecnologia,2,170,99,,,0
+GEF111,Sensoriamento Remoto e Sistemas de Informações Geográficas,4,340,99,,,0
+GMM101,Matemática Fundamental,2,170,99,,,0
+GMM103,Introdução à Lógica,4,340,99,,,0
+GMM110,Laboratório de Matemática,2,170,99,,,0
