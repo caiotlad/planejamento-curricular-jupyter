@@ -1,5 +1,7 @@
 # Planejamento curricular em Jupyter - fases 2 e 3
 
+Repositório: [https://github.com/caiotlad/planejamento-curricular-jupyter](https://github.com/caiotlad/planejamento-curricular-jupyter).
+
 ## 1. Problema e dados
 
 Planejamento curricular individual - GCC118 / Programação Matemática / UFLA / 2026/2. Aluno: Caio Teixeira Ladeira. Fases 2 e 3: formulação exata, testes no solver e métodos heurísticos, com execução em Jupyter.
